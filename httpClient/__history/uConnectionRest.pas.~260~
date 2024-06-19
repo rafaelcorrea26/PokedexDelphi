@@ -1,0 +1,113 @@
+unit uConnectionRest; // Classe que conecta na API
+
+interface
+
+uses
+  REST.Types,
+  REST.Client,
+  System.SysUtils,
+  Vcl.ExtCtrls,
+  System.JSON,
+  System.DateUtils,
+  Vcl.Dialogs;
+
+type
+
+  TConnectionRest = class(TObject)
+  private
+    FRestClient: TRESTClient;
+    FRestRequest: TRESTRequest;
+    FRestResponse: TRESTResponse;
+  public
+    destructor Destroy; override;
+    constructor Create;
+
+    // Componentes REST
+    property RestClient: TRESTClient read FRestClient write FRestClient;
+    property RestResponse: TRESTResponse read FRestResponse write FRestResponse;
+    property RestRequest: TRESTRequest read FRestRequest write FRestRequest;
+
+    // Funções Auxiliares
+    procedure ResetAllConfigsRequest;
+
+    // Funções GET
+    procedure BuscaPokemons(pPokemons: String = '');
+
+  end;
+
+implementation
+
+constructor TConnectionRest.Create;
+begin
+  FRestClient := TRESTClient.Create('');
+  FRestRequest := TRESTRequest.Create(nil);
+  FRestResponse := TRESTResponse.Create(nil);
+
+end;
+
+destructor TConnectionRest.Destroy;
+begin
+  FRestClient.Free;
+  FRestRequest.Free;
+  FRestResponse.Free;
+end;
+
+procedure TConnectionRest.BuscaPokemons(pPokemons: String);
+var
+  iTamanho, i: integer;
+  lObjectJson: TJSONObject;
+  lObjectJsonArray: TJSONArray;
+  lNovoToken: boolean;
+  lAccess: string;
+  lAccessDate: TDateTime;
+  fJson: TJSONObject;
+  fArrayJson: TJSONArray;
+begin
+  ResetAllConfigsRequest;
+  if pPokemons = EmptyStr then
+    FRestRequest.Client.BaseURL := 'https://pokeapi.co/api/v2/pokemon?limit=1'
+  else
+    FRestRequest.Client.BaseURL := 'https://pokeapi.co/api/v2/pokemon/' + pPokemons;
+
+  FRestRequest.Method := rmGET;
+  FRestRequest.Execute;
+
+  if (FRestRequest.Response.StatusCode = 200) then
+  begin
+
+    fJson := TJSONObject.ParseJSONValue(FRestRequest.Response.Content) as TJSONObject;
+    fArrayJson := fJson.GetValue<TJSONArray>('results') as TJSONArray;
+    iTamanho := fArrayJson.Count;
+
+    for i := 0 to fArrayJson.Count - 1 do
+    begin
+      if (fArrayJson <> nil) then
+      begin
+        fJson := fArrayJson.Items[i] as TJSONObject;
+        fJson := fJson.GetValue<TJSONObject> as TJSONObject;
+        begin
+          ShowMessage(fJson.ToJSON);
+        end;
+      end;
+    end;
+  end
+  else if (FRestRequest.Response.StatusCode = 400) then
+  begin
+    raise Exception.Create('Error Message');
+  end;
+end;
+
+procedure TConnectionRest.ResetAllConfigsRequest; // Função inicial
+begin
+  FRestClient.ResetToDefaults;
+  FRestClient.BaseURL := EmptyStr;
+  FRestResponse.ResetToDefaults;
+  FRestResponse.ContentEncoding := 'utf8';
+  FRestRequest.ResetToDefaults;
+  FRestRequest.Client := FRestClient;
+  FRestRequest.ClearBody;
+  FRestRequest.Response := FRestResponse;
+  FRestRequest.Params.Clear;
+end;
+
+end.

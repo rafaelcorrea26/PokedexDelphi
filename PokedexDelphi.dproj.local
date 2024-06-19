@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/06/18 20:20:28.000.672,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 20:27:35.579,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 20:27:49.597,C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\PokedexDelphi.dproj=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/06/18 20:38:50.011,C:\Users\Rafael\Desktop\PokedexDelphi\View\fPrincipal.dfm=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/06/18 20:38:50.011,C:\Users\Rafael\Desktop\PokedexDelphi\View\fPrincipal.pas=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 20:39:22.116,C:\Users\Rafael\Desktop\PokedexDelphi\PokedexDelphi.dproj=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\PokedexDelphi.dproj</Transaction>
+    <Transaction>2024/06/18 20:41:10.425,=C:\Users\Rafael\Desktop\PokedexDelphi\View\fAvisos.pas</Transaction>
+    <Transaction>2024/06/18 20:41:10.539,=C:\Users\Rafael\Desktop\PokedexDelphi\View\fConfiguracao.pas</Transaction>
+    <Transaction>2024/06/18 20:41:10.610,=C:\Users\Rafael\Desktop\PokedexDelphi\View\fManipulaRegistrosTabelaAux.pas</Transaction>
+    <Transaction>2024/06/18 20:41:10.677,=C:\Users\Rafael\Desktop\PokedexDelphi\View\fModoADM.pas</Transaction>
+    <Transaction>2024/06/18 20:41:32.812,C:\Users\Rafael\Desktop\PokedexDelphi\View\fManipulaRegistrosTabelaAux.pas=</Transaction>
+    <Transaction>2024/06/18 20:41:45.549,C:\Users\Rafael\Desktop\PokedexDelphi\View\fConfiguracao.pas=</Transaction>
+    <Transaction>2024/06/18 20:45:13.315,=C:\Users\Rafael\Desktop\PokedexDelphi\Shared\uContador.pas</Transaction>
+    <Transaction>2024/06/18 20:45:13.352,=C:\Users\Rafael\Desktop\PokedexDelphi\Shared\uFunctions.pas</Transaction>
+    <Transaction>2024/06/18 20:45:13.369,=C:\Users\Rafael\Desktop\PokedexDelphi\Shared\uMessages.pas</Transaction>
+    <Transaction>2024/06/18 20:45:13.387,=C:\Users\Rafael\Desktop\PokedexDelphi\Shared\uMinhaThread.pas</Transaction>
+    <Transaction>2024/06/18 20:45:13.430,=C:\Users\Rafael\Desktop\PokedexDelphi\Shared\uSettings.pas</Transaction>
+    <Transaction>2024/06/18 20:45:26.858,=C:\Users\Rafael\Desktop\PokedexDelphi\Model\uConnection.pas</Transaction>
+    <Transaction>2024/06/18 20:45:26.884,=C:\Users\Rafael\Desktop\PokedexDelphi\Model\uQuery.pas</Transaction>
+    <Transaction>2024/06/18 20:46:58.183,C:\Users\Rafael\Desktop\PokedexDelphi\Model\uConnection.pas=</Transaction>
+    <Transaction>2024/06/18 20:46:58.213,C:\Users\Rafael\Desktop\PokedexDelphi\Model\uQuery.pas=</Transaction>
+    <Transaction>2024/06/18 20:47:09.666,=C:\Users\Rafael\Desktop\PokedexDelphi\httpClient\uAuthentication.pas</Transaction>
+    <Transaction>2024/06/18 20:47:09.692,=C:\Users\Rafael\Desktop\PokedexDelphi\httpClient\uConnectionRest.pas</Transaction>
+    <Transaction>2024/06/18 20:47:09.727,=C:\Users\Rafael\Desktop\PokedexDelphi\httpClient\uToken.pas</Transaction>
+    <Transaction>2024/06/18 20:48:59.967,C:\Users\Rafael\Desktop\PokedexDelphi\Shared\uSettings.pas=</Transaction>
+    <Transaction>2024/06/18 20:50:04.034,C:\Users\Rafael\Desktop\PokedexDelphi\Shared\uContador.pas=</Transaction>
+    <Transaction>2024/06/18 20:50:04.096,C:\Users\Rafael\Desktop\PokedexDelphi\Shared\uFunctions.pas=</Transaction>
+    <Transaction>2024/06/18 20:50:04.124,C:\Users\Rafael\Desktop\PokedexDelphi\Shared\uMessages.pas=</Transaction>
+    <Transaction>2024/06/18 20:50:04.156,C:\Users\Rafael\Desktop\PokedexDelphi\Shared\uMinhaThread.pas=</Transaction>
+    <Transaction>2024/06/18 20:50:10.124,C:\Users\Rafael\Desktop\PokedexDelphi\httpClient\uToken.pas=</Transaction>
+    <Transaction>2024/06/18 20:50:36.245,C:\Users\Rafael\Desktop\PokedexDelphi\httpClient\uAuthentication.pas=</Transaction>
+    <Transaction>2024/06/18 21:15:07.474,=C:\Users\Rafael\Desktop\PokedexDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 21:15:32.282,C:\Users\Rafael\Desktop\PokedexDelphi\uPokemonAPIPaginatedRecords.pas=C:\Users\Rafael\Desktop\PokedexDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 21:15:45.037,C:\Users\Rafael\Desktop\PokedexDelphi\uPokemonAPIPaginatedRecords.pas=</Transaction>
+    <Transaction>2024/06/18 21:15:48.191,=C:\Users\Rafael\Desktop\PokedexDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 21:16:19.194,C:\Users\Rafael\Desktop\PokedexDelphi\fPokemonAPIPaginatedRecords.pas=C:\Users\Rafael\Desktop\PokedexDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 21:16:19.194,C:\Users\Rafael\Desktop\PokedexDelphi\fPokemonAPIPaginatedRecords.dfm=C:\Users\Rafael\Desktop\PokedexDelphi\Unit1.dfm</Transaction>
+    <Transaction>2024/06/18 21:17:56.343,C:\Users\Rafael\Desktop\PokedexDelphi\fPokemonAPIPaginatedRecords.pas=</Transaction>
+    <Transaction>2024/06/18 21:24:38.135,=C:\Users\Rafael\Desktop\PokedexDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 21:26:48.292,C:\Users\Rafael\Desktop\PokedexDelphi\Model\dPrincipal.pas=C:\Users\Rafael\Desktop\PokedexDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 21:26:48.292,C:\Users\Rafael\Desktop\PokedexDelphi\Model\dPrincipal.dfm=C:\Users\Rafael\Desktop\PokedexDelphi\Unit1.dfm</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="httpClient"/>
+    <File Path="httpClient\uConnectionRest.pas"/>
+    <File Path="View"/>
+    <File Path="View\fAvisos.pas"/>
+    <File Path="View\fAvisos.dfm"/>
+    <File Path="View\fModoADM.pas"/>
+    <File Path="View\fModoADM.dfm"/>
+    <File Path="View\fPrincipal.pas"/>
+    <File Path="View\fPrincipal.dfm"/>
+    <File Path="Model"/>
+    <File Path="Model\dPrincipal.pas"/>
+    <File Path="Model\dPrincipal.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

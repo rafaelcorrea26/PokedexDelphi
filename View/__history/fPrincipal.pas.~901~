@@ -1,0 +1,53 @@
+unit fPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.ExtCtrls, Vcl.Menus,
+  Vcl.AppEvnts, System.ImageList, Vcl.ImgList, Vcl.StdCtrls, Data.DB, Vcl.Grids,
+  Vcl.DBGrids;
+
+type
+  TfrmPrincipal = class(TForm)
+    pnlPrincipal: TPanel;
+    pnlEnvioAutomatico: TPanel;
+    btnIniciarServico: TButton;
+    pgcPrincipal: TPageControl;
+    pnlAviso: TPanel;
+    pnlAguarde: TPanel;
+    pnlLabelContador: TPanel;
+    lblPokemon: TLabel;
+    pnlTitulo: TPanel;
+    lblVersion: TLabel;
+    lblStatusServico: TLabel;
+    lblTotalizador: TLabel;
+    pnlModoAdm: TPanel;
+    imlIconsBlack24dp: TImageList;
+    opdImagem: TOpenDialog;
+    appEvents: TApplicationEvents;
+    TrayIcon: TTrayIcon;
+    popmenu: TPopupMenu;
+    Abrir1: TMenuItem;
+    N1: TMenuItem;
+    FecharAplicao1: TMenuItem;
+    tmrPrincipal: TTimer;
+    tbsConsulta: TTabSheet;
+    pnlBotoes: TPanel;
+    btnSair: TButton;
+    Panel1: TPanel;
+    DBGrid1: TDBGrid;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+end.
